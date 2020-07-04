@@ -212,23 +212,6 @@ main {
     .bmo {
         width: 100%;
     }
-    .igna {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .igna div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .igna div img {
-        width: 100%;
-        max-width: 240px;
-    }
 
 /* *********************************************** media *********************************************** */
 
@@ -241,9 +224,6 @@ main {
         }
     article {
         width: 85%;
-    }
-    .mal {
-        flex-direction: row;
     }
 
 }
