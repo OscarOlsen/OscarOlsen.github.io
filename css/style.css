@@ -33,15 +33,14 @@ img {
 .nav-movil {
     width: 100%;
     height: 260px;
-    background-color: #f6def6;
-    color: #342b38;
+    background-color: #bdbdbd;
     position: absolute;
-    transition : 0.8s;
+    transition : 0.6s;
     top: -300px;
 }
 .nav-movil-mostrar {
     top: 0;
-    transition : 0.8s;
+    transition : 0.6;
 }
     .nav-movil ul {
         width: 100%;
@@ -50,7 +49,7 @@ img {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 40px 60px 40px 0px;
+        padding: 40px 80px 40px 0px;
     }
         .nav-movil ul li {
             width: 200px;
@@ -58,13 +57,28 @@ img {
             display: flex;
             align-items: center;
             font-size: 16px;
+            cursor: pointer;
         }
+            .span-nav-movil {
+                color: #444242;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .span-nav-movil:hover {
+                color: #1f1f1f;
+            }
     .span-boton-nav-movil {
         position: absolute;
-        top: 30px;
-        right: 10px;
-        color: #626a95;
+        top: 0;
+        right: 0;
+        color: #444e86;
         font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 30px 30px 30px 30px;
+    }
+    .span-boton-nav-movil:hover {
+        color: #151b3b;
     }
 
 /* *********************************** div presentacion inicial *********************************** */
@@ -78,20 +92,20 @@ img {
 }
     .h1-mi-nombre {
         width: 100%;
-        padding: 30px 0px 30px 10px;
+        padding: 20px 0px 30px 30px;
     }
         .h1-mi-nombre a {
             width: 200px;
             display: block;
             font-size: 26px;
             font-weight: 2000;
-            color: #626a95;
+            color: #444e86;
         }
     .p-frase-personal {
         width: 95%;
         max-width: 760px;
         font-size: 22px;
-        color: #626a95;
+        color: #444e86;
         padding: 40px 30px 40px 30px;
         text-align: center;
         border-bottom: solid 1px #626a95;
@@ -102,11 +116,10 @@ img {
 
 main {
     width: 100%;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 20px 40px 20px;
 }
     article {
         width: 100%;
-        max-width: 800px;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
@@ -116,15 +129,15 @@ main {
     }
         .div-img-mi-foto {
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
             height: 300px;
             margin: auto;
-            border-radius: 4px;
+            border-radius: 2px;
             overflow: hidden;
         }
         .nav-escritorio {
             width: 100%;
-            max-width: 400px;
+            max-width: 300px;
             height: 300px;
             margin: auto;
         }
@@ -138,9 +151,10 @@ main {
                 align-items: center;
             }
             .nav-escritorio ul li {
-                width: 60%;
+                width: 80%;
                 padding: 10px;
                 display: flex;
+                cursor: pointer;
             }
                 .nav-escritorio ul li span {
                     display: flex;
@@ -152,12 +166,18 @@ main {
                     font-size: 20px;
                     color: #ad500d;
                 }
+                    .span-icon:hover ~ .span-nav-escritorio {
+                        color: #883a03;
+                    }
                 .span-nav-escritorio {
                     font-weight: bold;
                     font-size: 18px;
                     text-align: left;
                     color: #d2691e;
                 }
+                    .span-nav-escritorio:hover {
+                        color: #883a03;
+                    }
 
     .article-sobre-mi {
 
@@ -167,24 +187,68 @@ main {
             font-size: 28px;
         }
         .p-article-texto {
-            padding: 40px 0px 40px 0px;
-            font-size: 22px;
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
             text-align: justify;
         }
+        .div-grupo-tres-imagenes {
+            display: flex;
+            padding: 20px 0px 20px 0px;
+            width: 100%;
+        }
+            .div-grupo-tres-imagenes div {
+                width: 100%;
+                padding: 4px;
+                margin: auto;
+            }
+
+    .mal {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmo {
+        width: 100%;
+    }
+    .igna {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .igna div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .igna div img {
+        width: 100%;
+        max-width: 240px;
+    }
 
 /* *********************************************** media *********************************************** */
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .nav-movil {
         display: none;
     }
         .span-boton-nav-movil {
             display: none;
         }
+    article {
+        width: 85%;
+    }
+
 }
 
 @media (min-width: 1200px) {
     .h1-mi-nombre {
-        position: absolute;
+        position: fixed
+    }
+    article {
+        width: 70%;
     }
 }
