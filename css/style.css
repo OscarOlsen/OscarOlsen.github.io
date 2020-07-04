@@ -207,6 +207,7 @@ main {
         width: 100%;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     .bmo {
         width: 100%;
@@ -240,6 +241,9 @@ main {
         }
     article {
         width: 85%;
+    }
+    .mal {
+        flex-direction: row;
     }
 
 }
