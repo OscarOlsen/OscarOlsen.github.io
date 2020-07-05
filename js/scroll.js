@@ -1,6 +1,7 @@
+// ******************* Codigo para hacer scroll dinamico ******************* //
+
 let elementoScrollMovil = document.getElementsByClassName('span-nav-movil');
 let elementoScrollEscritorio = document.getElementsByClassName('span-nav-escritorio');
-console.log(elementoScrollEscritorio);
 
 for (let i = 0; i < elementoScrollMovil.length; i++) {
     elementoScrollMovil[i].addEventListener('click', function () {

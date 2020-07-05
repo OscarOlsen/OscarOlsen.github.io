@@ -1,3 +1,5 @@
+// ******************* Codigo para vizualizar navegador movil ******************* //
+
 let botonNavMovilMostrar = document.getElementById('span-nav-mov-mostrar');
 let botonNavMovilOcultar = document.getElementById('span-nav-mov-ocultar');
 

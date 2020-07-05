@@ -1,0 +1,42 @@
+.nav-escritorio-fixed {
+    left: 0;
+    top: 5px;
+    position: fixed;
+    width: 210px;
+    display: none;
+}
+.nav-escritorio-fixed ul li span {
+    font-size: 16px;
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+
+
+/* *********************************************** media *********************************************** */
+
+@media (min-width: 800px) {
+    .span-boton-nav-movil {
+        display: flex;
+    }
+    .nav-movil {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-escritorio-fixed {
+        display: flex;
+    }
+    .span-boton-nav-movil {
+        display: none;
+    }
+    .nav-movil {
+        display: none;
+    }
+}
